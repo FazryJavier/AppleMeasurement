@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1413</width>
+    <height>956</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>471</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>330</y>
+      <width>471</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>280</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>INPUT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>280</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>OUTPUT</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonReset">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>370</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Fixedsys</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>1621</width>
+      <height>921</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>8514oem</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(132,227,169);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonApple">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>460</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Fixedsys</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Apple Measurement</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1411</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>10</y>
+       <width>841</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Aplikasi Penentuan Harga Jual Buah Apel&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Berdasarkan Ukuran Diameter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>110</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Kelompok D4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>150</y>
+       <width>1271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Abdur Rafi Syach Ridwan | Fazry Javier Nugraha | M. Irfan Firdaus&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>190</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>190</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>190</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Courier New</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>550</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>HARGA : </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>550</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Rp0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>600</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>GRADE :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>600</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Courier New</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Rp0</string>
+    </property>
+   </widget>
+   <zorder>label_5</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>buttonReset</zorder>
+   <zorder>buttonApple</zorder>
+   <zorder>frame</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_16</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1413</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuDeteksi_Tepi">
+    <property name="title">
+     <string>Deteksi Tepi</string>
+    </property>
+    <addaction name="actionCanny_Edge"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuDeteksi_Tepi"/>
+  </widget>
+  <action name="actionGrayscale">
+   <property name="text">
+    <string>Grayscale</string>
+   </property>
+  </action>
+  <action name="actionPencerahan">
+   <property name="text">
+    <string>Pencerahan</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionKontras">
+   <property name="text">
+    <string>Kontras</string>
+   </property>
+  </action>
+  <action name="actionPeregangan_Kontras">
+   <property name="text">
+    <string>Peregangan Kontras</string>
+   </property>
+  </action>
+  <action name="actionNegatif">
+   <property name="text">
+    <string>Negatif</string>
+   </property>
+  </action>
+  <action name="actionBiner">
+   <property name="text">
+    <string>Biner</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Grayscale">
+   <property name="text">
+    <string>Histogram Grayscale</string>
+   </property>
+  </action>
+  <action name="actionHistogram_RGB">
+   <property name="text">
+    <string>Histogram RGB</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Equalization">
+   <property name="text">
+    <string>Histogram Equalization</string>
+   </property>
+  </action>
+  <action name="actionTranslasi">
+   <property name="text">
+    <string>Translasi</string>
+   </property>
+  </action>
+  <action name="action_45_Derajat">
+   <property name="text">
+    <string>-45 Derajat</string>
+   </property>
+  </action>
+  <action name="action45_Derajat">
+   <property name="text">
+    <string>45 Derajat</string>
+   </property>
+  </action>
+  <action name="action_90_Derajat">
+   <property name="text">
+    <string>-90 Derajat</string>
+   </property>
+  </action>
+  <action name="action90_Derajat">
+   <property name="text">
+    <string>90 Derajat</string>
+   </property>
+  </action>
+  <action name="action180_Derajat">
+   <property name="text">
+    <string>180 Derajat</string>
+   </property>
+  </action>
+  <action name="actionTranspose">
+   <property name="text">
+    <string>Transpose</string>
+   </property>
+  </action>
+  <action name="action2x">
+   <property name="text">
+    <string>2x</string>
+   </property>
+  </action>
+  <action name="action3x">
+   <property name="text">
+    <string>3x</string>
+   </property>
+  </action>
+  <action name="action4x">
+   <property name="text">
+    <string>4x</string>
+   </property>
+  </action>
+  <action name="action1_2">
+   <property name="text">
+    <string>1/2</string>
+   </property>
+  </action>
+  <action name="action1_4">
+   <property name="text">
+    <string>1/4</string>
+   </property>
+  </action>
+  <action name="action3_4">
+   <property name="text">
+    <string>3/4</string>
+   </property>
+  </action>
+  <action name="actionSkewed">
+   <property name="text">
+    <string>Skewed</string>
+   </property>
+  </action>
+  <action name="actionCrop">
+   <property name="text">
+    <string>Crop</string>
+   </property>
+  </action>
+  <action name="actionTambah_dan_Kurang">
+   <property name="text">
+    <string>Tambah dan Kurang</string>
+   </property>
+  </action>
+  <action name="actionOperasi_AND">
+   <property name="text">
+    <string>Operasi AND</string>
+   </property>
+  </action>
+  <action name="actionOperasi_OR">
+   <property name="text">
+    <string>Operasi OR</string>
+   </property>
+  </action>
+  <action name="actionOperasi_XOR">
+   <property name="text">
+    <string>Operasi XOR</string>
+   </property>
+  </action>
+  <action name="actionKali_dan_Bagi">
+   <property name="text">
+    <string>Kali dan Bagi</string>
+   </property>
+  </action>
+  <action name="actionKonvolusi2d">
+   <property name="text">
+    <string>Konvolusi 2D</string>
+   </property>
+  </action>
+  <action name="actionMean_Filter">
+   <property name="text">
+    <string>Mean Filter</string>
+   </property>
+  </action>
+  <action name="actionGaussian_Filter">
+   <property name="text">
+    <string>Gaussian Filter</string>
+   </property>
+  </action>
+  <action name="actionMedian_Filter">
+   <property name="text">
+    <string>Median Filter</string>
+   </property>
+  </action>
+  <action name="actionMax_Filter">
+   <property name="text">
+    <string>Max Filter</string>
+   </property>
+  </action>
+  <action name="actionKernel_low_pass_i">
+   <property name="text">
+    <string>Kernel high pass i</string>
+   </property>
+  </action>
+  <action name="actionKernel_low_pass_ii">
+   <property name="text">
+    <string>Kernel high pass ii</string>
+   </property>
+  </action>
+  <action name="actionKernel_low_pass_iii">
+   <property name="text">
+    <string>Kernel high pass iii</string>
+   </property>
+  </action>
+  <action name="actionKernel_low_pass_iv">
+   <property name="text">
+    <string>Kernel high pass iv</string>
+   </property>
+  </action>
+  <action name="actionKernel_low_pass_v">
+   <property name="text">
+    <string>Kernel high pass v</string>
+   </property>
+  </action>
+  <action name="actionKernel_low_pass_vi">
+   <property name="text">
+    <string>Kernel high pass vi</string>
+   </property>
+  </action>
+  <action name="actionKernel_laplace">
+   <property name="text">
+    <string>Kernel laplace</string>
+   </property>
+  </action>
+  <action name="actionMin_Filter">
+   <property name="text">
+    <string>Min Filter</string>
+   </property>
+  </action>
+  <action name="actionDFT_Smoothing_Image">
+   <property name="text">
+    <string>DFT Smoothing Image</string>
+   </property>
+  </action>
+  <action name="actionDFT_Deteksi_Tepi">
+   <property name="text">
+    <string>DFT Deteksi Tepi</string>
+   </property>
+  </action>
+  <action name="actionOperator_Sobel">
+   <property name="text">
+    <string>Operator Sobel</string>
+   </property>
+  </action>
+  <action name="actionOperator_Prewitt">
+   <property name="text">
+    <string>Operator Prewitt</string>
+   </property>
+  </action>
+  <action name="actionOperator_Roberts">
+   <property name="text">
+    <string>Operator Roberts</string>
+   </property>
+  </action>
+  <action name="actionCanny_Edge">
+   <property name="text">
+    <string>Canny Edge</string>
+   </property>
+  </action>
+  <action name="actionDilasi">
+   <property name="text">
+    <string>Dilasi</string>
+   </property>
+  </action>
+  <action name="actionErosi">
+   <property name="text">
+    <string>Erosi</string>
+   </property>
+  </action>
+  <action name="actionOpening">
+   <property name="text">
+    <string>Opening</string>
+   </property>
+  </action>
+  <action name="actionClosing">
+   <property name="text">
+    <string>Closing</string>
+   </property>
+  </action>
+  <action name="actionSkeleton">
+   <property name="text">
+    <string>Skeleton</string>
+   </property>
+  </action>
+  <action name="actionBinary">
+   <property name="text">
+    <string>Binary</string>
+   </property>
+  </action>
+  <action name="actionBinary_Invers">
+   <property name="text">
+    <string>Binary Invers</string>
+   </property>
+  </action>
+  <action name="actionTrunc">
+   <property name="text">
+    <string>Trunc</string>
+   </property>
+  </action>
+  <action name="actionTo_Zero">
+   <property name="text">
+    <string>To Zero</string>
+   </property>
+  </action>
+  <action name="actionTo_Zero_Invers">
+   <property name="text">
+    <string>To Zero Invers</string>
+   </property>
+  </action>
+  <action name="actionMean_Thresholding">
+   <property name="text">
+    <string>Mean Thresholding</string>
+   </property>
+  </action>
+  <action name="actionGaussian_Thresholding">
+   <property name="text">
+    <string>Gaussian Thresholding</string>
+   </property>
+  </action>
+  <action name="actionOtsu_Thresholding">
+   <property name="text">
+    <string>Otsu Thresholding</string>
+   </property>
+  </action>
+  <action name="actionContour">
+   <property name="text">
+    <string>Contour</string>
+   </property>
+  </action>
+  <action name="actiona">
+   <property name="text">
+    <string>a</string>
+   </property>
+  </action>
+  <action name="actionColor_Tracking">
+   <property name="text">
+    <string>Color Tracking</string>
+   </property>
+  </action>
+  <action name="actionColor_Picker">
+   <property name="text">
+    <string>Color Picker</string>
+   </property>
+  </action>
+  <action name="actionCars">
+   <property name="text">
+    <string>Cars</string>
+   </property>
+  </action>
+  <action name="actionAstronaut">
+   <property name="text">
+    <string>Astronaut</string>
+   </property>
+  </action>
+  <action name="actionPedestrian">
+   <property name="text">
+    <string>Pedestrian</string>
+   </property>
+  </action>
+  <action name="actionFace_Detection">
+   <property name="text">
+    <string>Face Detection</string>
+   </property>
+  </action>
+  <action name="actionPedestrian_Detection">
+   <property name="text">
+    <string>Pedestrian Detection</string>
+   </property>
+  </action>
+  <action name="actionHough_Transform">
+   <property name="text">
+    <string>Hough Transform</string>
+   </property>
+  </action>
+  <action name="actionCar_Detection">
+   <property name="text">
+    <string>Car Detection</string>
+   </property>
+  </action>
+  <action name="actionHistogram_of_Gradien">
+   <property name="text">
+    <string>Histogram of Gradient</string>
+   </property>
+  </action>
+  <action name="actionPedestria_Detection_with_HOG">
+   <property name="text">
+    <string>Pedestria Detection with HOG</string>
+   </property>
+  </action>
+  <action name="actionFace_Detection_2">
+   <property name="text">
+    <string>Face Detection</string>
+   </property>
+  </action>
+  <action name="actionPedestrian_Detection_2">
+   <property name="text">
+    <string>Pedestrian Detection</string>
+   </property>
+  </action>
+  <action name="actionCircle_Hough_Transform">
+   <property name="text">
+    <string>Circle Hough Transform</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

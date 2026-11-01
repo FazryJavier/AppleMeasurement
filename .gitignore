@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# IDE
+.idea/
+
+# Kalibrasi lokal (spesifik posisi kamera masing-masing)
+calibration.json
+
+# Aset portofolio (disimpan lokal, tidak dipublikasikan)
+portfolio/
